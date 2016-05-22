@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'moduleplanners/views'
+
+  get 'moduleplanners/check'
+
   get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -15,6 +19,7 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
      resources :checkprerequistes
+     resources :moduleplanners
 
   # Example resource route with options:
   #   resources :products do
